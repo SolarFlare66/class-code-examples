@@ -9,142 +9,303 @@
 */
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #fff;
-}
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+  }
+  
+  /****** Container *******/
+  .container {
+    padding: 0 2rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid transparent;
 
-/****** Container *******/
-.container {
-  padding: 0 2rem;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-}
+  }
+  
+  /****** Header *******/
+  
+  .header {
+    background-color: #EEEEEE;
+    padding: .7rem ;
 
-/****** Button *******/
+  }
+  
+  .header--banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header--banner--img {
+    align-items: center;
+    height: 5rem;
+  }
 
-.btn-primary {
-  padding: 1.5rem 3rem;
-  background-color: #778da9;
-  border-radius: 15px;
-  font-weight: 800;
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.5rem;
-}
+  .header--banner--nav ul {
+    display: flex;
+    gap: 2rem;
 
-.btn-primary:hover {
-  background-color: #214163;
-}
+    list-style-type:none;
+  }
 
-/****** Blog *******/
-.blog {
-  padding: 6rem 0;
-  background-color: #fff;
-}
+  .header--banner--nav li a {
 
-.blog h2 {
-  font-size: 3rem;
-  text-align: center;
-}
+    color:#123456;
+    font-weight: 800;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
 
-.blog--posts {
-  padding-top: 4rem;
-  display: flex;
-  gap: 3rem;
+  .header--banner--nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /****** Screen reader text *******/
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+  /********** Hero *************/
+  .hero{
+    border: 1px solid transparent;
+    background-color: #ddc4a6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero--flex--content {
+    background-image: url("/Assignment/Images/assignment2-image1.png");
+    background-size: 20.1rem;
 
-  list-style-type: none;
-}
+    width: 19.02rem;
+    height: 13.11rem;
 
-.blog--posts li img {
-  height: 15rem;
-  margin-bottom: 1rem;
-  border-radius: 15px;
+    padding-left: .5rem;
+    padding-right: .5rem;
 
-  object-fit: cover;
-}
+    border: 1px solid transparent;
+  }
+  
+  .hero--flex--title {
+    color:#000000;
+    font: sans-serif;
+    font-size: 1.3rem;
+    padding-top: 3rem;
 
-.blog--posts li p {
-  font-size: 1.3rem;
-}
+  }
+  
+  .hero--flex--content p {
+    
+    color:#000000;
+    padding-top: 1.5rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+    line-height: 1.3;
+    margin: .4rem;
+    justify-content: center;
+    align-self: center;
 
-/****** Hero *******/
-.hero {
-  background-color: #0d1b2a;
-}
+  }
 
-.hero--flex {
-  padding: 6rem 0 8rem 0;
-  color: #fff;
-  display: flex;
-  align-items: center;
-}
+  .img--bottom{
+    background-image: url("/Assignment/Images/unnamed.jpg");
+    background-size: 20.1rem;
 
-.hero--flex--img {
-  width: 50%;
-  border-radius: 15px;
-  object-fit: cover;
-}
+    background-position: 25% 75%;
 
-.hero--flex--content {
-  padding-right: 3rem;
-}
+    width: 19.02rem;
+    height: 13.11rem;
 
-.hero--flex--content h2 {
-  font-size: 3rem;
-  line-height: 1.1;
-  margin-bottom: 1rem;
-}
+    padding-left: .5rem;
+    padding-right: .5rem;
+    border: 1px solid transparent;
 
-.hero--flex--content p {
-  font-size: 1.3rem;
-  margin-bottom: 3rem;
-}
+  }
+  
+  .img--test{
+    background-image: url("/Assignment/Images/images\ \(2\).jpg");
+    background-size: 26.1rem;
 
-/****** Header *******/
-.header {
-  background-color: #0d1b2a;
-}
+    background-position: 68% 75%;
+    width: 19.02rem;
+    height: 26.32rem;
 
-.header--banner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    border: 1px solid transparent;
 
-  padding: 3rem 0;
-}
+  }
 
-.header--banner--img {
-  height: 5rem;
-}
+  .test {
+    display: flex;
 
-.header--banner--nav ul {
-  display: flex;
-  gap: 2rem;
+    flex-direction: row;
 
-  list-style-type: none;
-}
+    border: 1px solid transparent;
 
-.header--banner--nav ul li a {
-  color: #fff;
-  font-weight: 800;
-  text-decoration: none;
-  font-size: 1.2rem;
-}
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+  }
 
-.header--banner--nav ul li a:hover {
-  text-decoration: underline;
-}
+  
+  /********** Story *************/
 
-/****** Screen reader text *******/
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
-}
+  .bubbles{
+    background-image: url("/Assignment/Images/bubbles.png");
+    background-size: 47rem;
+
+    background-position: 50% 50%;
+    width: auto;
+    height: 15rem;  
+    border: 1px solid transparent;
+  }
+
+  .story {
+    border: 1px solid transparent;
+    background-color: #f8dcdd;
+    margin-top: 0rem;
+    margin-right: auto;
+  }
+
+  .textbox{
+    color: #bb5a73;
+    display: flex;
+    flex-direction: column;
+
+    width: 20rem;
+
+    background-color: #fffaf5;
+    border: 1rem solid #bb5a73;
+    padding-left: .3rem;
+    padding-right: .3rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    transform: translate(48%, -9rem); 
+  }
+
+  .textbox h2{
+    font-size: 1rem;
+    line-height: 1rem;
+    align-self: center;
+  }
+
+  .textbox p{
+    font-size: 0.7rem;
+    text-align: center;
+  }
+
+  .story--flex--image1{
+    transform: translate(-47.5%, -19rem); 
+    background-image: url("/Assignment/Images/download\ \(1\).jpg");
+    background-size: 21rem;
+
+    width: 20.6rem;
+    height: 14rem;
+
+    border: 1rem solid #ddc4a6;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .story--flex--image2{
+    transform: translate(7rem,21rem); 
+
+    background-image: url("/Assignment/Images/download\ \(2\).jpg");
+    background-size: 24rem;
+
+    width: 20.6rem;
+    height: 14rem;
+
+    border: 1rem solid #b59b79;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .bubbles2{
+    background-image: url("/Assignment/Images/bubbles2.png");
+    background-size: 47rem;
+
+    background-position: 50% 50%;
+    height: 12.6rem;  
+    border: 1px solid transparent;
+  }
+
+    /********** Specials *************/
+  .Specials{
+    background-color: #fffaf5;
+    border: 1px solid transparent;
+
+  }
+
+  .Specials h2{
+padding: 2rem;
+
+  }
+
+  .Specials--section1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    padding: 1rem;
+  }
+
+  .Forbidden--Butter{
+    background-image: url("/Assignment/Images/Untitled-2.png");
+    background-size: 10rem;
+
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+
+    height: 10rem;  
+    width:10rem;
+    transform: translate(0,-2.2rem); 
+
+  }
+
+  .Specials--section1--left{
+    display: flex;
+    flex-direction: column;
+
+    width: 25rem;
+    text-align: center;
+
+
+    background-color: #f8dcdd;
+  }
+
+  .Specials--section1 h6{
+    display: flex;
+    background-color: #bb5a73;
+    border: 1px solid #bb5a73;
+    border-radius: 30%;
+    font-size: 1rem;
+
+    width: 8rem;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    transform: translate(0,-2rem); 
+
+  }
+
+  .Specials--section1 h3{
+    transform: translate(0,1rem); 
+
+  }
+  .Specials--section1 h4{
+    transform: translate(0,-1.5rem); 
+    margin: 1rem;
+
+  }
